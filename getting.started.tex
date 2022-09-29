@@ -97,45 +97,12 @@
 %\fancyhead[RO, LE]{\small \rightmark}
 %\fancyfoot[RO, LE]{\small \thepage}
 
+\title{Getting Started with Git}
+\author{Simon Wells}
+\date{}
+
 \begin{document}
-%\frontmatter
-
-\begin{titlepage}
-\vspace*{5cm}
-\begin{center}
-\includegraphics[width=.5\textwidth]{images/EdNapUniLogoCMYK}~\\[1cm]
-
-\textsc{\Large Edinburgh Napier University}\\[1.5cm]
-
-\textsc{\LARGE \bfseries Git}\\[0.5cm]
-
-\hrulefill \\[0.4cm]
-{\huge \bfseries Getting Started \\[0.4cm] }
-\hrulefill \\[1.5cm]
-
-\begin{minipage}{0.4\textwidth}
-\begin{flushleft} \large
-\textbf{Dr Simon Wells} \\
-\end{flushleft}
-\end{minipage}
-
-\vfill
-
-\end{center}
-\end{titlepage}
-
-%\shorttoc{Overview}{0}
-
-%\setcounter{tocdepth}{2}
-%\cleardoublepage
-%\tableofcontents
-%\listoffigures
-%\listofalgorithms
-%\addtocontents{toc}{~\hfill\textbf{Page}\par}
-
-%\mainmatter
-
-%\input{sections/labs/04_ui}
+\maketitle
 
 \section{Aims}
 \paragraph{} At the end of the practical portion of this topic you will:
@@ -203,7 +170,7 @@
 
 \paragraph{} Once the repository is created you will be able to clone your empty repository. This means make a copy of the repository that is on GitHub on your local machine. The address for this is available from GitHub under the green "Clone or download" button. You need to copy and paste the address, which looks something like this:
 
-    \url{https://github.com/siwells/set08101.git}
+    \url{https://github.com/siwells/daka.git}
 
 
 \includegraphics[width=.8\textwidth]{images/github-clone-url}
@@ -214,16 +181,16 @@
 
 \begin{lstlisting}
     $ cd h:/
-    $ mkdir set08101
-    $ cd set08101
+    $ mkdir daka
+    $ cd daka
 \end{lstlisting}
 
-\paragraph{} These three commands changed the directory we were in (cd is short for change directory) then made a new directory in the new location (mkdir is short for make directory). Finally we changed directory again to move into the new set08101 directory.
+\paragraph{} These three commands changed the directory we were in (cd is short for change directory) then made a new directory in the new location (mkdir is short for make directory). Finally we changed directory again to move into the new daka directory.
 
 \paragraph{} Now we'll clone our repository from GitHub:
 
 \begin{lstlisting}
-    $ git clone https://github.com/siwells/set08101.git
+    $ git clone https://github.com/siwells/daka.git
 \end{lstlisting}
 
 \paragraph{} NB. I've used the clone address for this module's repository but your should replace the address, everythin after "git clone", with what you copied from GitHub earlier.
@@ -237,13 +204,13 @@
 \paragraph{} Now you can change directory into your project folder and run Git commands on your fresh repository:
 
 \begin{lstlisting}
-    $ cd set08101
+    $ cd daka
     $ git status
 \end{lstlisting}
 
 \paragraph{} The output from the git status command will look quite cryptic at the moment but you'll get used to it and quickly discover that it is telling you really important stuff about your repository and code. You can also open this folder in Window Explorer (of finder on a Mac) to manipulate your files if you find that easier but you will always need to use the git-bash program to update your repository and access the Git commands.
 
-\paragraph{} If we add a file, e.g. hello.html to our set08101 folder then run git status again we should get a different message to before, one telling us that the repository has changed because, well, we just added a new file, and it is Git's job to notice changes. Note that Git commands only work properly within a Git repository, that means you have to cd into a folder that is within your project that Git is tracking.
+\paragraph{} If we add a file, e.g. hello.html to our daka folder then run git status again we should get a different message to before, one telling us that the repository has changed because, well, we just added a new file, and it is Git's job to notice changes. Note that Git commands only work properly within a Git repository, that means you have to cd into a folder that is within your project that Git is tracking.
 
 \paragraph{} Whenever we add a new file to our project, or make a change to an existing file, we will need to tell Git to take note of the changes since last time. We do that with the add command:
 
@@ -271,7 +238,7 @@
     $ git push
 \end{lstlisting}
 
-\paragraph{} You should now be able to see the changes on the repositories GitHub page (you might need to refresh it first). Note that if this hasn't worked then you can try adding the repository address to the end of the command, e.g. \$ git push https://github.com/siwells/set08101.git - although make sure to change this address for your own as you won't have permissions to update the set08101 repository.
+\paragraph{} You should now be able to see the changes on the repositories GitHub page (you might need to refresh it first). Note that if this hasn't worked then you can try adding the repository address to the end of the command, e.g. \$ git push https://github.com/siwells/daka.git - although make sure to change this address for your own as you won't have permissions to update the daka repository.
 
 \includegraphics[width=.8\textwidth]{images/github-after-push}
 
