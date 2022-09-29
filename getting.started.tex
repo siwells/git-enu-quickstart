@@ -73,7 +73,7 @@
 \begin{document}
 \maketitle
 
-\section{Aims}
+\section*{Aims}
 \paragraph{} At the end of the practical portion of this topic you will:
 
 \begin{itemize}
@@ -83,17 +83,21 @@
 \item Have retrieved some supplementary texts from an online publisher
 \end{itemize}
 
+\section{Introduction}
+
+\paragraph{} Git is basically a multi-tool for working with text-based files (which is basically all source code). If we want to keep a history of changes to a file, if we want support in integrating changes from lots of people, if we want assistance in tracking down who, when, and where bugs have been introduced to a code-base. Git helps in all these things and many more.
+
 \paragraph{} There is a lot more to Git than just what is covered in this document. You should be practising with Git, turning the add-commit-push cycle into a habit but also learning additional features as you go along. Using Git counts as a professional skill for most developers and also for the people working alongside them because it is a great collaboration tool once you know how to use it well.
 
 \begin{framed}
-{\bf{NOTICE:} Make sure to type in commands rather than copying \& pasting from this document. Whilst typing can introduce typos, copying and pasting frequently introduces errors, particularly white-space related errors, that can cause things to go awry.}
+{\bf{NOTICE:} Make sure to type in commands rather than copying \& pasting from this document. Whilst typing can introduce typos, copying and pasting frequently introduces errors, particularly white-space related errors, that can cause things to go awry. More importantly, typing in commands is a part of your deliberate practise, because our minds can gloss over things whilst reading about them, but actively doing something can help to make it stick.}
 \end{framed}
 
 \section{Getting The Software}
 \paragraph{} Git on Windows is a bit different to Git on other platforms so this tutorial tries to make things similar between each platform. However there will always be slight differences. Once you have the software installed your experiences of Git should be comparable between platforms and you shold be able to directly translate your experiences from Window to Linux to OS X and back again (more or less).
 
 \subsection{Windows}
-\paragraph{} If you're on Windows go to the Git SCM website\footnote{\url{https://git-scm.com/download/win}}  - don't download the software that automatically starts downloading but instead choose the link labelled "64-bit Git for Windows Portable"\footnote{\url{https://github.com/git-for-windows/git/releases/download/v2.16.1.windows.1/PortableGit-2.16.1-64-bit.7z.exe}}. Let it download, click the exe and install it somewhere useful.
+\paragraph{} If you're on Windows go to the Git SCM website\footnote{\url{https://git-scm.com/download/win}}  - don't download the software that automatically starts downloading but instead choose the link labelled ``PortableGit'' (nowadays the 64-bit version is usually best \footnote{\url{https://github.com/git-for-windows/git/releases/latest}}. Let it download, click the exe and extract/install it somewhere useful.
 
 \paragraph{} When running Git you will want to click the git-bash.exe rather than git-cmd.exe. They work in different ways and the commands differ between the two. Using git-bash.exe means that we can use the same commands regardless of whether we are on a Mac, Linux, or Windows machine.
 
@@ -223,10 +227,14 @@
 
 \paragraph{} This is only scratching the surface of Git usage.  There are also numerous interactive tutorials and resources to help you get started with Git. I'd suggest reading at least the Git parable (which explains, through example, why Git is useful) and the learn Git in 15 minutes tutorial. The important thing is to actually type in the commands and see how things work in practise rather than just reading:
 \begin{enumerate}
-\item The Git Parable: \url{http://tom.preston-werner.com/2009/05/19/the-git-parable.html}
-\item Github's Learn Git 15 minute tutorial: \url{https://try.github.io/levels/1/challenges/1}
-\item Learn Git Branching \url{http://pcottle.github.io/learnGitBranching/}
+\item Github's Git `Hello World Exercise': \url{https://docs.github.com/en/get-started/quickstart/hello-world}
+\item Learn Git Branching \url{https://learngitbranching.js.org/}
 \item Git Immersion \url{http://gitimmersion.com/lab_01.html}
+\end{enumerate}
+
+\paragraph{} To set all of this in context and answer questions about why we needs all this stuff, it can be useful to read the Git parable. This uses a story, scenario, and some challenges, to demonstrate how the things that Git does satisfy a lot of things that we frequently need to do when working on real world projects.
+\begin{enumerate}
+\item The Git Parable: \url{http://tom.preston-werner.com/2009/05/19/the-git-parable.html}
 \end{enumerate}
 
 %\backmatter
